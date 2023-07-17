@@ -5,8 +5,8 @@ urlpatterns = [
     path('api/register', register),
     path('api/login', login),
     path('api/products', get_products),
-    path('api/products/<int:id>', get_product),
-    path('api/products', create_product),
-    path('api/products/<int:id>', update_product),
-    path('api/products/<int:id>', delete_product),
+    path('api/products-get/<int:id>', get_product),
+    path('api/products-create', create_product),
+    path('api/products-update/<int:id>', update_product),
+    path('api/products-delete/<int:id>', delete_product),
 ]
